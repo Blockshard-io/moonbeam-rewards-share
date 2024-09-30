@@ -1,0 +1,14 @@
+[Unit]
+Description=Moonbeam Balance Partner Sweep
+After=multi-user.target
+
+[Service]
+SyslogIdentifier=sweeptool
+Type=simple
+User=ubuntu
+Restart=on-failure
+Environment=PYTHONUNBUFFERED=1
+ExecStart=[DIR]/moonbeamShare/sweep.py -c [DIR]/moonbeamShare/config.json
+
+[Install]
+WantedBy=multi-user.target

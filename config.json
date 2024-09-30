@@ -1,0 +1,10 @@
+{
+    "proxy_mnemonic": "[enter seed here]",
+    "from_addresses": ["0x..."],
+    "to_address": "0x...",
+    "partner_address": "0x...",
+    "endpoint": "wss://moonbeam.unitedbloc.com:443",
+    "round_frequency": 1,
+    "proxy_delay": 0,
+    "leave_free": 12
+}
